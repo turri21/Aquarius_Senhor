@@ -44,16 +44,16 @@ module sys_top
 	input         HDMI_TX_INT,
 
 	//////////// SDR ///////////
-	output [12:0] SDRAM_A,
-	inout  [15:0] SDRAM_DQ,
+	//output [12:0] SDRAM_A,
+	//inout  [15:0] SDRAM_DQ,
 	//output        SDRAM_DQML,
 	//output        SDRAM_DQMH,
-	output        SDRAM_nWE,
-	output        SDRAM_nCAS,
-	output        SDRAM_nRAS,
-	output        SDRAM_nCS,
-	output  [1:0] SDRAM_BA,
-	output        SDRAM_CLK,
+	//output        SDRAM_nWE,
+	//output        SDRAM_nCAS,
+	//output        SDRAM_nRAS,
+	//output        SDRAM_nCS,
+	//output  [1:0] SDRAM_BA,
+	//output        SDRAM_CLK,
 	//output        SDRAM_CKE,
 
 `ifdef MISTER_DUAL_SDRAM
@@ -73,7 +73,7 @@ module sys_top
 	//output  [5:0] VGA_G,
 	//output  [5:0] VGA_B,
 	//inout         VGA_HS,
-	//output		  VGA_VS,
+	//output		    VGA_VS,
 	//input         VGA_EN,  // active low
 
 	/////////// AUDIO //////////
@@ -132,6 +132,10 @@ wire [5:0] VGA_B;
 wire VGA_HS;
 wire VGA_VS = 1'b1;
 wire VGA_EN = 1'b1;
+
+assign VGA_R = 6'b000000;
+assign VGA_G = 6'b000000;
+assign VGA_B = 6'b000000;
 
 wire [3:0] SDIO_DAT;
 wire SDIO_CMD = 1'b1;
