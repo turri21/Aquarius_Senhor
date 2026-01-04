@@ -1,3 +1,8 @@
+=(Aquarius_Senhor notes)=-
+
+Tested: Working Video 720p, 1080p & Sound.
+
+___
 # Mattel Aquarius for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)
 
 Port of Aquarius core by Sebastien Delestaing
